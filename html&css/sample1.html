@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    .container{
+      width:600px;
+      height:600px;
+      display:flex;
+    }
+
+
+    .child-container-one{
+      width: 200px;
+      height: 100%;
+      background-color:white;
+    }
+      .child-container-one .item-one{
+          height: 500px;
+          width:100%;
+          background: red;
+        }
+      .child-container-one .item-two{
+        height: 100px;
+        width:100%;
+        background: yellow;
+      }
+
+
+    .child-container-two{
+      width: 200px;
+      height: 100%;
+      background-color:blue;
+    }
+      .child-container-two .item-one{
+        height: 200px;
+        width:100%;
+        background: blue;
+      }
+      .child-container-two .item-two{
+        height: 400px;
+        width:100%;
+        background: green;
+      }
+
+
+    .child-container-three{
+      width: 200px;
+      height: 100%;
+      background-color:pink;
+    }
+      .child-container-three .item-one{
+          height: 300px;
+          width:100%;
+          background: black;
+        }
+        .child-container-three .item-two{
+          height: 300px;
+          width:100%;
+          background: pink;
+        }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child-container-one">
+      <div class="item-one"></div>
+      <div class="item-two"></div>
+    </div>
+    <div class="child-container-two">
+      <div class="item-one"></div>
+      <div class="item-two"></div>
+    </div>
+    <div class="child-container-three">
+      <div class="item-one"></div>
+      <div class="item-two"></div>
+    </div>
+  </div>
+</body>
+</html>

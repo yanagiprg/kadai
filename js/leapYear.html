@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leap Year</title>
+  <script>
+    function leapYear() {
+      const n = document.getElementById('year').value;
+      console.log(n)
+      if(n%4==0){
+        alert("西暦" + n + "年は閏年です。");
+      } else if(isNaN(n)){
+        alert("半角数字のみで入力してください")
+      } else {
+        alert("西暦" + n + "年は閏年ではありません");
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="year" maxlength="4">
+  <input type="button" value="判定" onclick="leapYear();">
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fizz Buzz</title>
+  <script>
+    function fizzBuzz(){
+      let n = 0;
+      while (n < 100) {
+        n++;
+        switch (n>0) {
+          case n%15==0:
+            console.log("FizzBuzz");
+          break;
+          case n%3==0:
+            console.log("Fizz");
+          break;
+          case n%5==0:
+            console.log("Buzz");
+          break;
+          default:
+            console.log(n);
+          break;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="button" value="FizzBuzz" onclick="fizzBuzz()">
+</body>
+</html>
