@@ -7,7 +7,7 @@
     function leapYear() {
       const n = document.getElementById('year').value;
       console.log(n)
-      if(n%4==0){
+      if(n%400==0 || n%100!=0&&n%4==0){
         alert("西暦" + n + "年は閏年です。");
       } else if(isNaN(n)){
         alert("半角数字のみで入力してください")
