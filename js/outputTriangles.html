@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Output Triangles</title>
+
+<head>
+  <script>
+    function outputTriangles1() {
+      for (let i = 1; i < 8; i++) {
+        const t = '*'.repeat(i)
+        console.log(t);
+      }
+    }
+    
+
+    function outputTriangles2() {
+      for (let i = 7; i > 0; i--) {
+        const t = '*'.repeat(i)
+        console.log(t)
+      }
+    }
+
+
+    function outputTriangles3() {
+      const triangles = `*******`
+      const arrayT = [...triangles]
+      for (let i = -1, len = arrayT.length - 1; i < len; i++) {
+        arrayT[i] === `*` ? arrayT[i] = ` ` : arrayT[i];
+        const t = arrayT.join("")
+        console.log(t);
+      }
+    }
+
+
+    function outputTriangles4() {
+      const triangles = `      *`
+      const arrayT = [...triangles]
+      for (let i = 6, len = arrayT.length - 8; i > len; i--) {
+        arrayT[i] === ` ` ? arrayT[i] = `*` : arrayT[i];
+        const t = arrayT.join("")
+        console.log(t);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <input type="button" value="1" onclick="outputTriangles1()">
+    <input type="button" value="2" onclick="outputTriangles2()">
+    <input type="button" value="3" onclick="outputTriangles3()">
+    <input type="button" value="4" onclick="outputTriangles4()">
+  </form>
+</body>
+
+</html>
